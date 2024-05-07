@@ -1,5 +1,5 @@
 body {
-    background-color: #1A7317;
+    background-color: #0D0D0D;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@ body {
 
 @media (min-width: 600px) {
     nav {
-        background-color: #010326;
+        background-color: #F29849;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -16,8 +16,12 @@ body {
 
     nav img {
         padding: 20px;
-        width: 10%;
+        width: 100%;
         height: 100%;
+    }
+    
+    .logo {
+        width: 7%;
     }
 
     ul {
@@ -33,7 +37,7 @@ body {
     }
 
     a {
-        color:#FCFCFD;
+        color:#0D0D0D;
         text-decoration: none;
     }
 
@@ -47,7 +51,7 @@ body {
         position: absolute;
         width: 0;
         height: 2px;
-        background: #ffffff;
+        background: #0D0D0D;
         transition: width .3s;
         bottom: 0;
         left: 50%;
@@ -57,5 +61,101 @@ body {
         width: 100%;
         left: 0;
       }
+
+      .fondo {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
       
-}
+      .fondo img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .fondo-description {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        color: #F1F2E9;
+        font-variant: small-caps;
+      }
+      
+      .fondo-description h1 {
+        font-size: 40px;
+        font-weight: 900;
+      }
+
+      .fondo-description p {
+        font-size: 20px;
+        text-shadow: 2px 1px 0px #0D0D0D;
+      }
+
+      .btn-font {
+        display: flex;
+        margin-top: 60px;
+      }
+
+      .fondo-btn{
+        padding: 10px 30px;
+        background-color: #2EA7F2;
+        border-radius: 25px;
+        transition: all 0.3s;
+      }
+
+      .fondo-btn:hover{
+        transform: scale(1.1);
+        background-color: #2EA7F2 ;
+        box-shadow: 0px 0px 10px #2EA7F2,0px 0px 20px #2EA7F2,0px 0px 40px #2EA7F2 ;
+      }
+
+      .btn {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 100px 100px;
+      }
+
+      .btn a{
+        margin: 0 30px;
+        color: #F1F2E9;
+        font-size: 20px;
+        transition: all 0.3s;
+      }
+
+      .btn a:hover{
+        color: #05F2DB;
+        transform: scale(1.1);
+      }
+
+      .footer-content {
+        display: flex;
+      }
+
+      .footer-img {
+        max-width: 250px;
+        padding: 0;
+        transition: all 0.3s;
+      }
+
+      .footer-img:hover{
+        transform: scale(1.1);
+      }
+
+      .footer-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      .footer-content i {
+        margin: 0 10px;
+      }
+
+      .container {
+        color: #F1F2E9;
+      }
+      
+      .container a {
+        color: #F1F2E9;
+      }
+}       
