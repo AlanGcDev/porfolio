@@ -152,10 +152,67 @@ body {
       }
 
       .container {
-        color: #F1F2E9;
+        margin: 80px 80px;
+        display: flex;
+        width: auto;
+        height: 100%;
+        background-color: #F1F2E9;
+        border-radius: 25px;
+      }
+
+      .category-container {
+        display: flex;
+        margin: 40px 40px;
+        gap: 40px;
+      }
+
+      .webs, .configs, .server {
+        box-shadow: 0px 0px 20px #525251;
+        border-radius: 25px;
+        background-color: #F1F2E9;
       }
       
-      .container a {
-        color: #F1F2E9;
+      .title-webs, .title-configs, .title-servers {
+        display: flex;
+        font-variant: small-caps;
+      }
+
+      .title-webs h1, .title-configs h1, .title-servers h1 {
+        margin: 10px 15px;
+        font-weight: 900;
+        font-size: 23px;
+     }
+
+     .title-webs a, .title-configs a, .title-servers a {
+        background-color: #F29849;
+        border-radius: 25px;
+        padding: 5px 15px;
+        font-size: 15px;
+        margin: 15px 15px;
+        transition: all 0.3s;
+     }
+
+     .title-webs a:hover, .title-configs a:hover, .title-servers a:hover{
+        box-shadow: 0px 0px 10px #F29849,0px 0px 20px #F29849;
+        transform: scale(1.05);
+     }
+
+      .webs-container, .servers-container, .configs-container{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .webs-container a, .servers-container a, .configs-container a{
+        transition: all 0.3s;
+      }
+
+      .webs-container a:hover, .servers-container a:hover, .configs-container a:hover{
+        transform: scale(1.1);
+      }
+
+      .webs-container p, .servers-container p, .configs-container p {
+        font-size: 15px;
       }
 }       
