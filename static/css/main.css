@@ -216,5 +216,169 @@ body {
         font-size: 15px;
       }
 
+      .webs-category{
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50px;
+        margin: 50px 50px;
+        background-color: #F1F2E9;
+        width: 92%;
+        height: auto;
+        display: flex;
+      }
+
+      .title-webs-category {
+        font-size: 50px;
+      }
+
+      .webs-category-container {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+        margin: 60px 0;
+      }
+
+      .webs-1 {
+        position: relative;
+        width: 30%;
+        box-shadow: 0px 0px 20px #333333,0px 0px 40px #333333;
+      }
       
-}       
+      .webs-1 img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease-in-out;
+        transition: all 0.3s;
+      }
+      
+      .webs-1:hover img p h1 {
+        opacity: 0.25;
+        transform: scale(1.05);
+      }
+
+      .overlay h1 {
+        font-size: 40px;
+        font-variant: small-caps;
+        font-weight: 900;
+        color: #F29849;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        transition: all 0.3s;
+        color: #F1F2E9; /* Cambia el color del texto según sea necesario */
+        background: #333333; /* Añade un fondo oscuro */
+      }
+      
+      .webs-1:hover .overlay {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      .configs-category {
+        background-color: #F1F2E9;
+        margin: 80px 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        border-radius: 25px;
+        width: 86%;
+        height: auto;
+      }
+
+      .configs-category-container {
+        margin: 50px 50px;
+        background-color: #F1F2E9;
+        width: 100%;
+        height: auto;
+       
+      }
+
+      .guis, .scoreboard {
+        margin: 50px 50px;
+        background-color: #F1F2E9;
+        width: 92%;
+        height: auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 20px #0D0D0D,0px 0px 40px #0D0D0D;
+      }
+      
+      .title-guis h1, .title-scoreboard h1 {
+        margin: 20px 0;
+        font-size: 35px;
+        font-variant: small-caps;
+        font-weight: 900;
+      }
+      .title-guis p, .title-scoreboard p{
+        font-size: 20px;
+      }
+
+      .title-guis i, .title-scoreboard i{
+        margin: 0 20px;
+      }
+
+      .link-home {
+        text-decoration:underline;
+        color: #F26B1D;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .button-container a {
+        background-color: #F29849;
+        padding: 10px 30px;
+        border-radius: 25px;
+        font-size: 15px;
+        font-variant: small-caps;
+        font-weight: 900;
+        transition: all 0.3s; 
+        margin: 20px 0;
+      }
+
+      .button-container a:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #F26B1D,0px 0px 20px #F26B1D;
+        transform: scale(1.05);
+      }
+      
+      #more-guis, #less-guis {
+        margin-top: 20px; /* Ajusta este valor según sea necesario */
+      }
+
+      .animated-image {
+        width: 75%;
+        height: auto;
+        animation: slideInDown 2s ease-out;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+      }
+
+      .guis-img-1 {
+        margin: 100px 0;
+      }
+      .guis-img-1 h1{
+        margin-top: -40px;
+      }
+}     
