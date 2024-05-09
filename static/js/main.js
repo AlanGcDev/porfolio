@@ -1,16 +1,12 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelectorAll('.menu a').forEach(a => {
-      if (a.href === window.location.href) {
-          a.setAttribute('aria-current', 'page');
-      }
-  });
+
 
 document.querySelectorAll('.menu a').forEach(a => {
     if (a.href === window.location.href) {
       a.setAttribute('aria-current', 'page');
     }
   });
-  
+  document.addEventListener('DOMContentLoaded', (event) => {
+
   document.getElementById('more-guis').addEventListener('click', function() {
     var images = document.querySelectorAll('#guis-images img');
     images.forEach(function(image, index) {
@@ -34,6 +30,9 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('more-guis').style.display = 'block';
     this.style.display = 'none';
   });
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
 
   document.getElementById('more-scoreboard').addEventListener('click', function() {
     var images = document.querySelectorAll('#scoreboard-images img');
@@ -59,6 +58,10 @@ document.querySelectorAll('.menu a').forEach(a => {
     this.style.display = 'none';
   });
 
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+
   document.getElementById('more-tabs').addEventListener('click', function() {
     var images = document.querySelectorAll('#tabs-images img');
     images.forEach(function(image, index) {
@@ -82,6 +85,9 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('more-tabs').style.display = 'block';
     this.style.display = 'none';
   });
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
 
   document.getElementById('more-ranks').addEventListener('click', function() {
     var images = document.querySelectorAll('#ranks-images img');
@@ -94,7 +100,6 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('less-ranks').style.display = 'block';
     this.style.display = 'none';
   });
-
   document.getElementById('less-ranks').addEventListener('click', function() {
     var images = document.querySelectorAll('#ranks-images img');
     images.forEach(function(image) {
@@ -106,6 +111,9 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('more-ranks').style.display = 'block';
     this.style.display = 'none';
   });
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
 
   document.getElementById('more-alertas').addEventListener('click', function() {
     var images = document.querySelectorAll('#alertas-images img');
@@ -130,7 +138,9 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('more-alertas').style.display = 'block';
     this.style.display = 'none';
   });
+});
 
+document.addEventListener('DOMContentLoaded', (event) => {
 
   document.getElementById('more-hologramas').addEventListener('click', function() {
     var images = document.querySelectorAll('#hologramas-images img');
@@ -155,6 +165,9 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('more-hologramas').style.display = 'block';
     this.style.display = 'none';
   });
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
 
   document.getElementById('more-mobs').addEventListener('click', function() {
     var images = document.querySelectorAll('#mobs-images img');
@@ -179,6 +192,6 @@ document.querySelectorAll('.menu a').forEach(a => {
     document.getElementById('more-mobs').style.display = 'block';
     this.style.display = 'none';
   });
-
 });
+
   
